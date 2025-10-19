@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BarakaShop.DataAccess\BarakaShop.DataAccess.csproj" />
+    <ProjectReference Include="..\BarakaShop.Domain\BarakaShop.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
