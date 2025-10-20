@@ -1,5 +1,6 @@
 ﻿using BarakaShop.Domain.Entities;
 using BarakaShop.Domain.Entities.Addresses;
+using BarakaShop.Domain.Entities.Categories;
 using BarakaShop.Domain.Entities.Promocodes;
 using BarakaShop.Domain.Entities.Stores;
 using BarakaShop.Domain.Entities.Users;
@@ -25,13 +26,11 @@ namespace BarakaShop.DataAccess.Contexts
         DbSet<OrderStatus> PaymentMethods { get; set; }
         DbSet<Product> Products { get; set; }
         DbSet<ProductChildAttribute> ProductChildAttributes { get; set; }
-        DbSet<ProductChildCategory> ProductChildCategories { get; set; }
+        DbSet<ProductCategory> ProductCategories { get; set; }
         DbSet<ProductComment> ProductComments { get; set; }
         DbSet<ProductDetail> ProductDetails { get; set; }
-        DbSet<ProductGrandChildCategory> ProductGrandChildCategories { get; set; }
         DbSet<ProductImage> ProductImages { get; set; }
         DbSet<ProductRootAttribute> ProductRootAttributes { get; set; }
-        DbSet<ProductRootCategory> ProductRootCategories { get; set; }
         DbSet<ProductScore> ProductScores { get; set; }
         DbSet<PromoCode> PromoCodes { get; set; }
         DbSet<UserPromoCode> UserPromoCodes { get; set; }
