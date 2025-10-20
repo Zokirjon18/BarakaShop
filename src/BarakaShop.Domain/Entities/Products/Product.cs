@@ -1,4 +1,6 @@
-﻿namespace BarakaShop.Domain.Entities;
+﻿using BarakaShop.Domain.Commons;
+
+namespace BarakaShop.Domain.Entities;
 
 public class Product : Auditable
 {

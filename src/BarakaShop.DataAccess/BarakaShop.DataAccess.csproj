@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="EntityConfigurations\" />
-    <Folder Include="UnitOfWorks\" />
   </ItemGroup>
 
 </Project>
