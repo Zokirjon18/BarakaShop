@@ -2,6 +2,7 @@
 using BarakaShop.DataAccess.Repositories;
 using BarakaShop.Domain.Entities;
 using BarakaShop.Domain.Entities.Addresses;
+using BarakaShop.Domain.Entities.Categories;
 using BarakaShop.Domain.Entities.Payments;
 using BarakaShop.Domain.Entities.Promocodes;
 using BarakaShop.Domain.Entities.Stores;
@@ -38,19 +39,15 @@ namespace BarakaShop.DataAccess.UnitOfWorks
 
         public IRepository<ProductChildAttribute> ProductChildAttributes { get; } = new Repository<ProductChildAttribute>(context);
 
-        public IRepository<ProductChildCategory> ProductChildCategories { get; } = new Repository<ProductChildCategory>(context);
+        public IRepository<ProductCategory> ProductCategories { get; } = new Repository<ProductCategory>(context);
 
         public IRepository<ProductComment> ProductComments { get; } = new Repository<ProductComment>(context);
 
         public IRepository<ProductDetail> ProductDetails { get; } = new Repository<ProductDetail>(context);
 
-        public IRepository<ProductGrandChildCategory> ProductGrandChildCategories { get; } = new Repository<ProductGrandChildCategory>(context);
-
         public IRepository<ProductImage> ProductImages { get; } = new Repository<ProductImage>(context);
 
         public IRepository<ProductRootAttribute> ProductRootAttributes { get; } = new Repository<ProductRootAttribute>(context);
-
-        public IRepository<ProductRootCategory> ProductRootCategories { get; } = new Repository<ProductRootCategory>(context);
 
         public IRepository<ProductScore> ProductScores { get; } = new Repository<ProductScore>(context);
 

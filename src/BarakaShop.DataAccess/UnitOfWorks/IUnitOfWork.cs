@@ -1,6 +1,7 @@
 ﻿using BarakaShop.DataAccess.Repositories;
 using BarakaShop.Domain.Entities;
 using BarakaShop.Domain.Entities.Addresses;
+using BarakaShop.Domain.Entities.Categories;
 using BarakaShop.Domain.Entities.Payments;
 using BarakaShop.Domain.Entities.Promocodes;
 using BarakaShop.Domain.Entities.Stores;
@@ -25,13 +26,11 @@ namespace BarakaShop.DataAccess.UnitOfWorks
         IRepository<PaymentMethod> PaymentMethods { get; }
         IRepository<Product> Products { get; }
         IRepository<ProductChildAttribute> ProductChildAttributes { get; }
-        IRepository<ProductChildCategory> ProductChildCategories { get; }
+        IRepository<ProductCategory> ProductCategories { get; }
         IRepository<ProductComment> ProductComments { get; }
         IRepository<ProductDetail> ProductDetails { get; }
-        IRepository<ProductGrandChildCategory> ProductGrandChildCategories { get; }
         IRepository<ProductImage> ProductImages { get; }
         IRepository<ProductRootAttribute> ProductRootAttributes { get; }
-        IRepository<ProductRootCategory> ProductRootCategories { get; }
         IRepository<ProductScore> ProductScores { get; }
         IRepository<PromoCode> PromoCodes { get; }
         IRepository<UserPromoCode> UserPromoCodes { get; }
