@@ -1,6 +1,0 @@
-@BarakaShop.WebApi_HostAddress = http://localhost:5209
-
-GET {{BarakaShop.WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
